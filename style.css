@@ -1,0 +1,295 @@
+/* Import Google Web fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
+
+
+/* Set the page defaults e.g. background and default typography */
+
+body {
+  background: #fff;
+  font-family: 'Noto Serif', serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+/* a few tweaks here and there */
+
+h2 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Set the default style of the figure element */
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+figcaption {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Default style of the blockquote element
+    Tweak this or add your won by using class names */
+
+blockquote {
+  width: 66%;
+  margin: 1em auto;
+  background: #ddd;
+  padding: 1em;
+  font-size: 1.25em;
+  text-align: center;
+  color: #696969;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+}
+
+/* This controls the content sections.
+    The width of the column is set by "padding" rather than the "width" style
+    e.g. 20% = 60% width. */
+
+.content {
+  margin: 0 auto;
+  padding: 1em 20%;
+  box-sizing: border-box;
+}
+
+/* The footer's style */
+
+footer {
+  height: 100px;
+  background: #000;
+  color: #eee;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Styling the full-page background headers */
+
+.image_bg {
+  /* this sets the height of each
+  full width image section to that of the viewport.*/
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center !important;
+}
+
+
+/* the text inside the headers */
+
+header {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 0 9px #000000;
+  width: 75%;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 6vw;
+}
+
+header a {
+  color: white;
+}
+
+
+
+/* Styles for header sections to apply background images or colour. */
+
+.pier {
+  background: url(images/luc-sur-mer-pier.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.paris {
+  background: url(images/Paris2013.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.my_green {
+  /* this sets the background colour of the coloured header. */
+  background: #AED581;
+}
+
+/* These are the background images defined in example.html */
+
+.paris_scroll {
+  background: url(images/Paris2013.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  /*This line makes it scroll, not fixed */
+}
+
+.man {
+  background: url(images/man-2785071_1920.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100% !important;
+}
+
+.man_halftone {
+  background: url(images/man-halftone.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100% !important;
+}
+
+.oldpaper {
+  /* This style is applied to a content section
+  rather than a header section */
+  background: url(images/old-paper.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.beer {
+  background: url(images/beer.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100% !important;
+}
+
+.embeds {
+  background: url(images/croissant-648803_1280.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100% !important;
+}
+
+/* Example stuff - The CSS for the additional examples in example.html */
+
+.profile img { /* styles the profile images in the first header section*/
+
+  width: 90px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 1em;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.profile {
+  text-align: center;
+  font-weight: normal;
+}
+
+/* Styling the alternative figure example */
+
+.overlay_fig {
+  position: relative;
+}
+
+.overlay_fig img {
+  box-shadow: none;
+}
+
+.overlay_fig figcaption {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  background: rgba(0, 0, 0, 0.6);
+  width: 66%;
+  font-size: 2em;
+  color: white;
+  padding: 0.33em;
+}
+
+
+.content.man {
+  /* This style creates an alternative style for the column of content
+  the column is ofset to the right of the viewport rather than centred */
+  padding: 1em 10% 1em 60%;
+}
+
+
+/*Alternative blockquote styles */
+.bq_one {
+  font-size: 18px;
+  font-family: georgia, serif;
+  color: #900C3F;
+  background: #FAD7A0;
+  padding: 1em;
+  border-left: 8px solid #C70039;
+}
+
+.bq_two {
+  background: none;
+}
+
+/* Making the rows */
+
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  margin: 0.5em;
+  flex-basis: 20%; /*This determines each item's width*/
+  flex-grow: 1; /* This makes each item grow to fit the available space. set to 0 to tuen off*/
+}
+
+.round img {
+  border-radius: 50%;
+}
+
+.embed_bg { /* a hack to make embedding stuff into the headers work */
+  /* height: 100vh; */
+   /* this sets the height of each full width image section to that of the viewport.*/
+   position: relative;
+   /*display: flex;  */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-position: center !important;
+}
+
+
+/* Create an overlay colour or image
+to cover the background image of a full screen header.
+This could be a transparent colour - see the coomented line below, or an image.
+The image defined below is a black/transparent vignette-styled png file.   */
+.overlay_full {
+  position: absolute;
+/* background: rgba(122,55,0,0.3); */
+background: url(images/grad1.png) no-repeat;
+background-size: cover;
+width: 100%;
+height: 100vh;
+z-index: 2;
+}
+
+.front { /* apply this to the header that corresponds to the overlay_full element.
+  It will ensure that the header and text go above the overlay colour or image*/
+  z-index:100;
+}
+
+
+.overlay_full_holes {
+  position: absolute;
+/* background: rgba(122,55,0,0.3); */
+background: url(images/top_secret.png) no-repeat;
+background-size: cover;
+width: 100%;
+height: 100vh;
+z-index: 2;
+}
