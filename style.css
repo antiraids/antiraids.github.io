@@ -65,6 +65,13 @@ blockquote {
   box-sizing: border-box;
 }
 
+.content_dark {
+  margin: 0 auto;
+  padding: 1em 20%;
+  box-sizing: border-box;
+  background-color: #f7f7f7
+}
+
 /* The footer's style */
 
 footer {
@@ -112,8 +119,8 @@ header a {
 
 /* Styles for header sections to apply background images or colour. */
 
-.pier {
-  background: url(images/luc-sur-mer-pier.jpg) no-repeat;
+.stall {
+  background: url(images/stall.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
