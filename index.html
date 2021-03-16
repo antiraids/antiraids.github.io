@@ -89,12 +89,13 @@
   <nav id="page-head">
     <ul>
 		<li><a href="#">Home</a></li>
-		<li><a href="#howmany">How many</a></li>
+		<!-- <li><a href="#howmany">How many</a></li>-->
 		<li><a href="#hotspots">Hotspots</a></li>
 		<li><a href="#digging">Digging down</a></li>
 		<li><a href="#trend">Trend</a></li>
 		<li><a href="#your">Your area</a></li>
 		<li><a href="#map">Map</a></li>
+		<li><a href="#whatnext">What next</a></li>
 	</ul>
   </nav>
   <article>
@@ -105,16 +106,17 @@
       </header>
     </section>
 	
-	<section class="content_dark">
+	<section class="content">
 		<h2>The data</h2>
-		<p>Researchers from the Anti-Raids Network have uncovered Home Office data detailing where immigration raids happen in London. This data gives counts of immigration raids, broken down by:
+		<p>Researchers from the Anti-Raids Network have uncovered data on where immigration raids happen in London. This data gives counts of immigration raids, broken down by:
 		<ul>
 			<li>year</li>
 			<li>"postcode district", the first bit of the postcode (e.g. N15, E6)</li>
 		</ul>
+		Below, we outline where the hotspots are, what the differences are, how things have changed over the last few years, and then dig into the local detail.
 		</p>
 	</section>
-	
+	<!--
 	<a name="howmany"></a>
 	<section class="content">
 		<h2>How many raids does each area have?</h2>
@@ -123,8 +125,9 @@
 		<img src="..\London Raids\Outputs\Raids_totals_hist.png" />
 		<p>1 in 5 London districts have had 200+ immigration raids in that time.</p>
 		<img src="..\London Raids\Outputs\Raids_totals_pie.png" />
+		<p align="center"><a href="#map">🠗 Jump to map</p>
 	</section>
-	
+	-->
 	<a name="hotspots"></a>
 	<section class="content_dark">
 		<h2>Where do lots of raids happen?</h2>
@@ -133,6 +136,7 @@
 		<p>As a network of anti-raids groups, we want to know districts where there are both a high number of raids, and a high <em>rate</em> of raids -- as they could be prime areas for new anti-raids organising.</p>
 		<p>Looking from this angle, in the top 20 there are districts covered by existing anti-raids groups &mdash; e.g. N15 and N17 by Haringey Anti-Raids, E15 by Newham Anti-Raids &mdash; but also lots of districts without known organisations working against raids.</p>
 		<img src="..\London Raids\Outputs\Raids_vs_rate.png" />
+		<p align="center"><a href="#map">🠗 Jump to map</p>
 	</section>
 	
 	<a name="digging"></a>
@@ -142,6 +146,8 @@
 		<img src="..\London Raids\Outputs\RaidsRate_vs_nonwhite.png" />
 		<p>Not all migrant communities are harassed by ICE equally. In <a href="https://public.tableau.com/views/Deportation2020/Table1?:language=en-GB&:embed=y&:embed_code_version=3&:loadOrderID=4&:display_count=y&:origin=viz_share_link">other reports</a>, for example we see Indian and Pakistani migrants making up a high proportion of people deported, vs a relatively low rate of people from the Middle East. And that seems to be broadly in line with our immigration raids data:</p>
 		<img src="..\London Raids\Outputs\RaidsByEthnicity.png" />
+		<p>This is just one (obvious) example of why raids might vary by area &mdash; there are likely lots of other factors at play too. You can access the data itself via <a href="https://antiraids.github.io">our Github</a>.
+		<p align="center"><a href="#map">🠗 Jump to map</p>
 	</section>
 	
 	<a name="trend"></a>
@@ -150,6 +156,7 @@
 		<p>There isn't a simple narrative like "raids have fallen over the last few years". Some districts went up, some went down, some were all over the shop.</p>
 		<img src="..\London Raids\Outputs\Raids_change.png" />
 		<p>More went down than up since 2014, but it's a bit of a mess.</p>
+		<p align="center"><a href="#map">🠗 Jump to map</p>
 	</section>
 	
 	<a name="your"></a>
@@ -157,6 +164,7 @@
 		<h2>Digging down to your district</h2>
 		<p>Use the legend in the sidebar to highlight postcode districts. Use the controls at the bottom to zoom in, scroll around, and reset.</p>
 		<iframe src="..\London Raids\Outputs\InteractiveLine_E.html" title="Raids In E London" style="overflow:hidden; border:0" width="100%" height="600px"></iframe> 
+		<p align="center"><a href="#map">🠗 Jump to map</p>
 	</section>
 	
 	<!-- <div class="folium-map" id="map_92187dd4d55e4cd1b361e54d4cba50f5" ></div> -->
@@ -168,8 +176,27 @@
 	<iframe src="..\London Raids\choropleth.html" title="Raids In London" style="overflow:hidden; border:0" width="100%" height="600px"></iframe>
 	</article>
 
+	<a name="whatnext"></a>
+	<section class="content">
+		<h2>So, what next?</h2>
+		<p>We think that immigration raids are best resisted at the local level. You can use this data to find out what's happening in your area.</p>
+		<ul>
+		<li>Is it the local immigration raid hotspot in the area you live, or is it a few minutes walk away?</li>
+		<li>Do you know of any shops in the hotspot that might be targeted by immigration enforcement? Could you print off <a href="http://antiraids.net/immigration-checks-know-your-rights/raids-on-workplaces-homes/">some flyers from the Anti-Raids Network</a> website and drop them over, so they know their rights?</li>
+		<li>Are you disgusted at the amount of immigration raids that happen in your area? If so, you should join an anti-raids group!</li>
+		</ul>
+		<h3>Local anti-raids groups</h3>
+		<p>We have active local groups in <a href="https://twitter.com/HaringeyAR">Haringey</a>, <a href="https://twitter.com/Newham_AR">Newham</a>, a new group in <a href="https://twitter.com/SWLdnAntiRaids">south west London</a> and a dormant group in <a href="https://twitter.com/Deptford_AR">Deptford</a> (as well as groups across the UK in <a href="https://twitter.com/Antiraids_Ed">Edinburgh</a>, <a href="https://twitter.com/sheffantiraids">Sheffield</a>, <a href="https://twitter.com/antiraidsBTN">Brighton</a>, <a href="https://twitter.com/brisantiraids">Bristol</a>, and <a href="https://twitter.com/antiraidsleeds">Leeds</a>)</p>
+		<p>If there's not an anti-raids group in your area, then:
+		<ul>
+		<li>read <a href="http://antiraids.net/wp-content/uploads/2016/04/anti-raids-zine.pdf">our guide to setting up an anti-raids group</a></li>
+		<li>reach out to Haringey Anti-Raids (<a href="https://twitter.com/HaringeyAR">Twitter</a>, <a href="mailto:haringeyantiraids@gmail.com">email</a>) if you want help setting up a local training / workshop to get you started</li>
+		</ul>
+		Good luck in the struggle!
+	</section>
+	
   <footer>
-    <p style="margin: 0px;">Anti Raids Network, 2020</p>
+    <p style="margin: 0px;">Get the data from <a href="https://antiraids.github.io">our Github</a> | Anti Raids Network, 2021</p>
 	<p style="margin: 0px;"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></p>
 	<p style="margin: 0px;">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
   </footer>
