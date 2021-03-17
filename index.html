@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+	<style>div.panel-body {text-align: center;}</style>
     
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -112,9 +113,9 @@
 		<p>Researchers from the Anti-Raids Network have uncovered data on where immigration raids happen in London. This data gives counts of immigration raids, broken down by:
 		<ul>
 			<li>year</li>
-			<li>the first bit of the postcode (e.g. N15, E6), which we call <strong>postcode area</strong> for ease</li>
+			<li>the first bit of the postcode &ndash; e.g. N15, E6 &ndash; which we call <strong>postcode area</strong></li>
 		</ul>
-		Below, we outline where the hotspots are, what the differences are, how things have changed over the last few years, and then dig into the local detail.
+		Below, we outline: where the hotspots are, how things have changed over the last few years, dig into the local detail, then suggest some next steps.
 		</p>
 	</section>
 	<!--
@@ -147,7 +148,7 @@
 		<img src="..\London Raids\Outputs\RaidsRate_vs_nonwhite.png" />
 		<p>Not all migrant communities are harassed by ICE equally. In <a href="https://public.tableau.com/views/Deportation2020/Table1?:language=en-GB&:embed=y&:embed_code_version=3&:loadOrderID=4&:display_count=y&:origin=viz_share_link">other reports</a>, for example we see Indian and Pakistani migrants making up a high proportion of people deported, vs a relatively low rate of people from the Middle East. And that seems to be broadly in line with our immigration raids data:</p>
 		<img src="..\London Raids\Outputs\RaidsByEthnicity.png" />
-		<p>This is just one (obvious) example of why raids might vary by area &mdash; there are likely lots of other factors at play too. You can access the data itself via <a href="https://antiraids.github.io">our Github</a>.
+		<p>How many racialised migrants an area has is just one reason why raids might vary from one area to another. There are likely lots of other factors at play too. If you want, you can grab the FOI data itself from <a href="https://antiraids.github.io">our Github</a> and play around to see any other links.
 		<p align="center"><a href="#map">🠗 Jump to map</p>
 	</section>
 	
@@ -163,8 +164,84 @@
 	<a name="your"></a>
 	<section class="content">
 		<h2>Digging down to your area</h2>
+		<p>To make the data a bit easier to plough through, we have broken it down into line graphs for each section of inner London:</p>
 		<p>Use the legend in the sidebar to highlight postcode areas. Use the controls at the bottom to zoom in, scroll around, and reset.</p>
-		<iframe src="..\London Raids\Outputs\InteractiveLine_E.html" title="Raids In E London" style="overflow:hidden; border:0" width="100%" height="600px"></iframe> 
+
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseE">E</a>
+					</h4>
+				</div>
+				<div id="collapseE" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<iframe src="..\London Raids\Outputs\InteractiveLine_E.html" title="Raids In E London" style="overflow:hidden; border:0; text-align:center;" width="85%" height="600px"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseSE">SE</a>
+					</h4>
+				</div>
+				<div id="collapseSE" class="panel-collapse collapse">
+					<div class="panel-body">
+						<iframe src="..\London Raids\Outputs\InteractiveLine_SE.html" title="Raids In SE London" style="overflow:hidden; border:0; text-align:center;" width="85%" height="600px"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseSW">SW</a>
+					</h4>
+				</div>
+				<div id="collapseSW" class="panel-collapse collapse">
+					<div class="panel-body">
+						<iframe src="..\London Raids\Outputs\InteractiveLine_SW.html" title="Raids In SW London" style="overflow:hidden; border:0; text-align:center;" width="85%" height="600px"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseW">W</a>
+					</h4>
+				</div>
+				<div id="collapseW" class="panel-collapse collapse">
+					<div class="panel-body">
+						<iframe src="..\London Raids\Outputs\InteractiveLine_W.html" title="Raids In W London" style="overflow:hidden; border:0; text-align:center;" width="85%" height="600px"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseNW">NW</a>
+					</h4>
+				</div>
+				<div id="collapseNW" class="panel-collapse collapse">
+					<div class="panel-body">
+						<iframe src="..\London Raids\Outputs\InteractiveLine_NW.html" title="Raids In NW London" style="overflow:hidden; border:0; text-align:center;" width="85%" height="600px"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseN">N</a>
+					</h4>
+				</div>
+				<div id="collapseN" class="panel-collapse collapse">
+					<div class="panel-body">
+						<iframe src="..\London Raids\Outputs\InteractiveLine_N.html" title="Raids In N London" style="overflow:hidden; border:0; text-align:center;" width="85%" height="600px"></iframe>
+					</div>
+				</div>
+			</div>
+		</div> 
+		
 		<p align="center"><a href="#map">🠗 Jump to map</p>
 	</section>
 	
@@ -202,11 +279,11 @@
 		<p><strong>FOI</strong>: "Freedom of Information", shorthand for requests made to public bodies for information under the Freedom Of Information Act.</p>
 		<p><strong>ICE</strong>: "Immigration Compliance and Enforcement", shorthand for the core government department responsible for enforcing "immigration" law.</p>
 		<p><strong>Immigration raid</strong>: the name for when the government goes into a local area, with the intention to detain people under "immigration enforcement" powers, for harassment and deportation. Sometimes just called "raids" for brevity.</p>
-		<p><strong>Postcode area</strong>: the shorthand we use here for the first half of a UK postcode (e.g. N15, E6). Technically, the "postcode area" is the first bit of the first half (1-2 letters e.g. <strong>SE</strong>1 7EU, <strong>SW</strong>1P 4DF), the "postcode district" is the second bit of the first half (e.g. SE<strong>1</strong> 7EU, SW<strong>1P</strong> 4DF), and the whole first half is called the "outward code" &mdash; but that felt a bit technical a term to use.
+		<p><strong>Postcode area</strong>: the shorthand we use here for the first half of a UK postcode (e.g. N15, E6). Technically, the "postcode area" is the first bit of the first half (1-2 letters e.g. <strong>SE</strong>1 7EU, <strong>SW</strong>1P 4DF), the "postcode district" is the second bit of the first half (e.g. SE<strong>1</strong> 7EU, SW<strong>1P</strong> 4DF), and the postcode area and postcode district together are called the "outward code" &mdash; but that felt a bit too technical a term to use.
 	</section>
-	
+
   <footer>
-    <p style="margin: 0px;">Get the data from <a href="https://antiraids.github.io">our Github</a> | Anti Raids Network, 2021</p>
+    <p style="margin: 0px;">Get the data and more on the methodology from <a href="https://antiraids.github.io">our Github</a> | Anti Raids Network, 2021</p>
 	<p style="margin: 0px;"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></p>
 	<p style="margin: 0px;">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
   </footer>
