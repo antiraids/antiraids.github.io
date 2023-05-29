@@ -44,7 +44,7 @@
 				  width: 100%;
 				}
 				
-				nav ul {
+				/* nav ul {
 				  list-style-type: none;
 				  margin: 0;
 				  padding: 0;
@@ -67,7 +67,7 @@
 				nav li a:hover {
 				  background-color: #d62728;
 				  color: #fff;
-				}
+				} */
 				
 				h2 {
 					font-size: 5rem;
@@ -87,10 +87,51 @@
 	
 </head>
 <body>
-  <nav id="page-head">
+
+<!-- Nav was z-indexing badly and taking up whole screen on mobile => replaced with ugly but functional https://bootstrapdocs.com/v3.2.0/docs/components/ -->
+
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Anti-Raids Network</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		<li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Drilling down <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+			<li><a href="#howmany">How many</a></li>
+			<li><a href="#hotspots">Hotspots</a></li>
+			<li><a href="#digging">Raids and racism</a></li>
+			<li><a href="#trend">Trend</a></li>
+          </ul>
+        </li>
+		<li><a href="#your">Your area</a></li>
+		<li><a href="#map">Map</a></li>
+		<li><a href="#whatnext">What next</a></li>
+		<li><a href="#glossary">Glossary</a></li>
+		<li><a href="#foitemplate">FOI template</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://antiraids.net/">Anti-Raids main site</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--  <nav id="page-head">
     <ul>
 		<li><a href="#">Home</a></li>
-		<!-- <li><a href="#howmany">How many</a></li>-->
+		<li><a href="#howmany">How many</a></li>
 		<li><a href="#hotspots">Hotspots</a></li>
 		<li><a href="#digging">Digging down</a></li>
 		<li><a href="#trend">Trend</a></li>
@@ -101,6 +142,8 @@
 		<li><a href="#foitemplate">FOI template</a></li>
 	</ul>
   </nav>
+  -->
+  
   <article>
     <section class="stall image_bg">
       <header>
